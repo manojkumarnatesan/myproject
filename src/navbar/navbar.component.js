@@ -13,14 +13,14 @@ function Navbar() {
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#menu"
+          aria-controls="menu"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="">
@@ -54,17 +54,29 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
-          <Link className="btn btn-outline-primary"  to="/login" target="_blank" rel="noopener noreferrer">
-            Login
-          </Link>
+          <div className="ms-auto d-block d-lg-flex">
+            <div class="nav-item ">
+              <a
+                class="btn btn-primary mb-2 mb-lg-0"
+                href="https://play.google.com/store/apps/details?id=paperplane.health.app&hl=en_GB&gl=IN&pli=1"
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download App
+              </a>
+            </div>
+            <div class="nav-item">
+              <Link
+                className="btn btn-outline-primary ms-0 ms-lg-2"
+                to="/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Login
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
