@@ -7,7 +7,7 @@ function Header() {
       <h4>
         <p class="text">
           Hear it from our customers, on how to use Paperplane.
-          <a className="rounded-2 bg-light" href="https://www.youtube.com/shorts/MxvvIqZtJHY" target=" blank ">
+          <a className="rounded-2 bg-light" href="https://www.youtube.com/watch?v=PkPsiPWzxb0" target=" blank ">
             Learn more
           </a>
         </p>
